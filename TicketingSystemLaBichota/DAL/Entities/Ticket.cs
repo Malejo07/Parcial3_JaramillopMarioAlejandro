@@ -4,6 +4,7 @@ namespace TicketingSystemLaBichota.DAL.Entities
 {
     public class Ticket : Entity
     {
+        #region
         [Display(Name = "Ingrese su Ticket")]
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
         public int TicketId { get; set; }
@@ -24,5 +25,6 @@ namespace TicketingSystemLaBichota.DAL.Entities
             Norte,
             Sur,
         }
+        #endregion
     }
 }
